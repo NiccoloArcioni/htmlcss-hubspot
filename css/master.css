@@ -11,10 +11,108 @@
   clear: both;
 }
 
+/* GENERAL */
 .float_l {
   float: left;
 }
 
 .float_r {
   float: right;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+  text-transform: capitalize;
+}
+ul li a {
+  text-decoration: none;
+}
+
+ul.line_list li {
+  display: inline;
+  padding: 0 10px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  line-height: 30px;
+}
+.btn_small {
+  padding: 5px 10px;
+}
+.btn_med {
+  padding: 10px 20px;
+}
+.btn_white {
+  background-color: white;
+  color: #b54710;
+  border: 1px solid #b54710;
+}
+.btn_orange {
+  background-color: #b54710;
+  color: white;
+}
+
+/* COLOR */
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+/* HEADER */
+header {
+  height: 600px;
+  background-color: lightgrey;
+}
+
+.header_nav {
+  line-height: 60px;
+}
+
+.nav_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e4e4e4;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom: 1px solid black;
+}
+
+/* NAV LEFT */
+header ul.line_list.float_l li:first-child::before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  content: "\f7a2";
+  font-weight: 900;
+  padding-right: 5px;
+}
+header ul.line_list.float_l li:first-child::after {
+  content: "\25BE";
+  padding-left: 10px;
+}
+
+header ul.line_list.float_l li:not(:first-child)::before {
+  content: '|';
+  padding-right: 25px;
+}
+
+/* NAV RIGHT */
+header ul.line_list.float_r li:first-child::before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  content: "\f002";
+  font-weight: 900;
+  padding-right: 25px;
+  color: #27a0ac;
 }
