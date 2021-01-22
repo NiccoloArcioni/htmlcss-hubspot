@@ -74,14 +74,17 @@ header {
   background-color: lightgrey;
 }
 
-.header_nav {
-  line-height: 60px;
+.logo_nav {
+  background-color: white;
+  display: inline-block;
 }
 
+/* INIZIO FIXED */
 .nav_fixed {
   position: fixed;
   top: 0;
   left: 0;
+  line-height: 60px;
   width: 100%;
   background-color: #e4e4e4;
   padding-left: 10%;
@@ -90,25 +93,25 @@ header {
 }
 
 /* NAV LEFT */
-header ul.line_list.float_l li:first-child::before {
+header div.nav_fixed ul.line_list.float_l li:first-child::before {
   font-family: "Font Awesome 5 Free";
   display: inline-block;
   content: "\f7a2";
   font-weight: 900;
   padding-right: 5px;
 }
-header ul.line_list.float_l li:first-child::after {
+div.nav_fixed nav.float_l li:first-child::after {
   content: "\25BE";
   padding-left: 10px;
 }
 
-header ul.line_list.float_l li:not(:first-child)::before {
+div.nav_fixed nav.float_l li:not(:first-child)::before {
   content: '|';
   padding-right: 25px;
 }
 
 /* NAV RIGHT */
-header ul.line_list.float_r li:first-child::before {
+div.nav_fixed nav.float_r li:first-child::before {
   font-family: "Font Awesome 5 Free";
   display: inline-block;
   content: "\f002";
@@ -116,3 +119,23 @@ header ul.line_list.float_r li:first-child::before {
   padding-right: 25px;
   color: #27a0ac;
 }
+/* FINE FIXED */
+
+/* INIZO LOGO NAV */
+header div.logo_nav {
+  height: 60px;
+  width: 100vw;
+  padding: 0 10vw;
+  margin-top: 60px;
+  line-height: 60px;
+}
+
+div.logo_nav img {
+  margin-top: 15px;
+}
+
+div.logo_nav li:not(:nth-child(2)):after {
+  content: "\25BE";
+  padding-left: 10px;
+}
+/* FINE LOGO NAV */
