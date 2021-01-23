@@ -49,15 +49,24 @@ ul.line_list li {
 }
 
 /* COLONNE */
+.col {
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
 .col-2 {
   width: 50%;
 }
 
+.col_shadow {
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px lightgrey;
+}
 /* BUTTONS */
 .btn {
   display: inline-block;
   border-radius: 5px;
-  line-height: 30px;
+  line-height: 20px;
 }
 .btn_small {
   padding: 5px 10px;
@@ -196,3 +205,65 @@ div.logo_nav li:not(:nth-child(2)):after {
   border-bottom: 2px solid black;
 }
 /* FINE BANNER */
+
+
+/* INIZIO MAIN */
+.first_section {
+  text-align: center;
+}
+.first_section h2, .first_section h3 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.first_section h2 {
+  font-size: 2em;
+}
+.first_section h3 {
+  font-size: 1.7em;
+}
+.first_section h4 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+.first_section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.first_section:first-child {
+  width: 60%;
+}
+
+.img_button_container {
+  width: 25%;
+  height: 200px;
+  text-align: center;
+}
+.text_container {
+  width: 75%;
+  text-align: left;
+  padding: 10px 20px;
+}
+.col:not(:first-child) img {
+  width: 150px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.col_shadow p::after{
+  content: '';
+  display: block;
+  height: 0px;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.first_section ul li::before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  content: '\f058';
+  font-weight: 900;
+  color: #b54710;
+  margin-right: 20px;
+}
