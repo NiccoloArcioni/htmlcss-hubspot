@@ -114,6 +114,12 @@ ul.line_list li {
   color: white;
 }
 
+a.btn:hover {
+  background-color: rgba(81, 155, 209, 0.3);
+  color: white;
+  border: 1px solid white;
+}
+
 /* COLOR */
 .black {
   color: black;
@@ -400,7 +406,7 @@ footer {
 
 footer div.col-4 {
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 footer .top_section_nav .col-4 li {
