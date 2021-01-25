@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -97,12 +97,16 @@ ul.line_list li {
 .btn_med {
   padding: 10px 30px;
 }
-.btn_white {
+.btn_white_txt_blue {
+  background-color: white;
+  color: #2D3E50;
+}
+.btn_white_txt_orange {
   background-color: white;
   color: #b54710;
   border: 1px solid #b54710;
 }
-.btn_orange {
+.btn_orange_txt_white {
   background-color: #b54710;
   color: white;
 }
