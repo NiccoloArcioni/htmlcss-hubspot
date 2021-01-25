@@ -47,6 +47,9 @@ a {
   text-decoration: none;
   text-transform: capitalize;
 }
+a:not(.btn):hover {
+  color: #3a79c2;
+}
 
 ul.line_list li {
   display: inline;
@@ -414,4 +417,8 @@ div.languages nav {
   text-align: center;
   padding: 20px 0;
   margin-bottom: 50px;
+}
+
+footer div.bottom_section .logo_copyright {
+  padding-bottom: 60px
 }
