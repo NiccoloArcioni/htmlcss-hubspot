@@ -49,6 +49,7 @@ a {
 }
 a:not(.btn):hover {
   color: #3a79c2;
+  text-decoration: underline;
 }
 
 ul.line_list li {
@@ -56,10 +57,13 @@ ul.line_list li {
   padding: 0 10px;
 }
 
+p, span {
+  margin: 15px 0;
+}
 /* COLONNE */
 .col {
   padding: 40px 20px;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .col-2 {
@@ -82,10 +86,6 @@ ul.line_list li {
 .col_shadow {
   border-radius: 5px;
   box-shadow: 0px 0px 20px lightgrey;
-}
-
-.col_hor {
-  width: 100%;
 }
 
 /* BUTTONS */
@@ -118,6 +118,7 @@ a.btn:hover {
   background-color: rgba(81, 155, 209, 0.3);
   color: white;
   border: 1px solid white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 /* COLOR */
@@ -224,11 +225,9 @@ div.logo_nav li:not(:nth-child(2)):after {
 }
 .banner_text > p {
   font-size: 1.4em;
-  margin: 20px 0;
 }
 .banner_text > span {
   display: block;
-  margin-top: 20px;
 }
 
 /* BOTTOM LINE HEADER */
@@ -245,12 +244,12 @@ div.logo_nav li:not(:nth-child(2)):after {
 
 
 /* INIZIO MAIN */
-.first_section {
-  text-align: center;
+div.first_section div.txt_center:first-child {
+  width: 60%;
+  margin: 0 auto;
 }
 .first_section h2, .first_section h3, .bottom_text_customers h2 {
   text-transform: capitalize;
-  margin-bottom: 30px;
 }
 .first_section h2, .bottom_text_customers h2 {
   font-size: 2em;
@@ -264,7 +263,6 @@ div.logo_nav li:not(:nth-child(2)):after {
 }
 .first_section p, .bottom_text_customers p {
   font-size: 1.2em;
-  margin-bottom: 40px;
 }
 
 .first_section:first-child {
@@ -296,6 +294,9 @@ div.logo_nav li:not(:nth-child(2)):after {
   margin-top: 40px;
 }
 
+.col-3 ul {
+  margin-bottom: 15px;
+}
 .first_section ul li::before {
   font-family: "Font Awesome 5 Free";
   display: inline-block;
@@ -303,10 +304,6 @@ div.logo_nav li:not(:nth-child(2)):after {
   font-weight: 900;
   color: #b54710;
   margin-right: 20px;
-}
-
-.col-3 ul {
-  margin-bottom: 15px;
 }
 
 /* SEZIONE TABELLA */
@@ -325,12 +322,11 @@ div.white.txt_center {
 }
 .container div.top_text h2 {
   font-size: 2em;
-  margin-bottom: 30px;
 }
 
 div.col-4 .text_table h2 {
   font-size: 3em;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 div.col-4 .text_table h2::after {
@@ -387,9 +383,6 @@ div.col-4 .text_table h2::after {
 .bottom_text_customers {
   padding: 5px 10% 0 10%;
 }
-.bottom_text_customers a {
-  margin-bottom: 30px;
-}
 
 .bottom_customers .bottom_customers_img .img_customers_container {
   height: 350px;
@@ -404,15 +397,9 @@ footer {
   background-color: #2D3E50;
 }
 
-footer div.col-4 {
-  margin-top: 40px;
-  margin-bottom: 80px;
-}
-
 footer .top_section_nav .col-4 li {
   margin-bottom: 15px;
 }
-
 li.list_title {
   font-weight: bold;
   font-size: 1.2em;
@@ -425,6 +412,6 @@ div.languages nav {
   margin-bottom: 50px;
 }
 
-footer div.bottom_section .logo_copyright {
+footer div.bottom_section {
   padding-bottom: 60px
 }
