@@ -57,6 +57,10 @@ ul.line_list li {
   padding: 0 10px;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 p, span {
   margin: 15px 0;
 }
@@ -173,12 +177,7 @@ div.nav_fixed nav.float_l li:not(:first-child)::before {
 }
 
 /* NAV RIGHT */
-div.nav_fixed nav.float_r li:first-child::before {
-  font-family: "Font Awesome 5 Free";
-  display: inline-block;
-  content: "\f002";
-  font-weight: 900;
-  padding-right: 25px;
+div.nav_fixed nav.float_r li a#search {
   color: #27a0ac;
 }
 /* FINE FIXED */
@@ -251,9 +250,6 @@ div.first_section div.txt_center:first-child {
 .first_section h2, .first_section h3, .bottom_text_customers h2 {
   text-transform: capitalize;
 }
-.first_section h2, .bottom_text_customers h2 {
-  font-size: 2em;
-}
 .first_section h3 {
   font-size: 1.7em;
 }
@@ -319,9 +315,6 @@ div.first_section div.txt_center:first-child {
 
 div.white.txt_center {
   padding: 20px 10px;
-}
-.container div.top_text h2 {
-  font-size: 2em;
 }
 
 div.col-4 .text_table h2 {
