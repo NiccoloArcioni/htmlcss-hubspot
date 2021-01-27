@@ -48,7 +48,7 @@ a {
   text-transform: capitalize;
 }
 a:not(.btn):hover {
-  color: #3a79c2;
+  color: #0091ae;
   text-decoration: underline;
 }
 
@@ -107,24 +107,22 @@ p, span {
 .btn_white_txt_blue {
   background-color: white;
   color: #2D3E50;
+  border: 1px solid #2D3E50;
 }
 .btn_white_txt_orange {
   background-color: white;
-  color: #b54710;
-  border: 1px solid #b54710;
+  color: #ff7a59;;
+  border: 1px solid #ff7a59;
 }
 .btn_orange_txt_white {
-  background-color: #b54710;
+  background-color: #ff7a59;
   color: white;
+  border: 1px solid #ff7a59;
 }
 
 a.btn:hover {
-  background-color: rgba(81, 155, 209, 0.3);
-  color: white;
-  border: 1px solid white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  opacity: 0.5;
 }
-
 /* COLOR */
 .black {
   color: black;
@@ -151,7 +149,7 @@ header {
   left: 0;
   line-height: 60px;
   width: 100%;
-  background-color: #e4e4e4;
+  background-color: #FFFFFF;
   padding-left: 10%;
   padding-right: 10%;
   border-bottom: 1px solid black;
@@ -243,6 +241,9 @@ div.logo_nav li:not(:nth-child(2)):after {
 
 
 /* INIZIO MAIN */
+main section:first-child {
+  background-color: #FFFFFF;
+}
 div.first_section div.txt_center:first-child {
   width: 60%;
   margin: 0 auto;
@@ -298,7 +299,7 @@ div.first_section div.txt_center:first-child {
   display: inline-block;
   content: '\f058';
   font-weight: 900;
-  color: #b54710;
+  color: #ff7a59;
   margin-right: 20px;
 }
 
